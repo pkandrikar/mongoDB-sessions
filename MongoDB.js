@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 const client = new MongoClient(
-  "mongodb+srv://pkandrikar:Deskera@123@cluster0.pkmzk.mongodb.net/database1?retryWrites=true&w=majority",
+  "mongodb+srv://pkandrikar:password@cluster0.pkmzk.mongodb.net/database1?retryWrites=true&w=majority",
   { useUnifiedTopology: true },
   { keepAlive: 1 }
 );
