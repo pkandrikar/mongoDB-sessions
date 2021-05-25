@@ -1,3 +1,5 @@
+const functions = require("firebase-functions");
+
 const express = require("express");
 const booksRouter = require("./Books");
 const MongoDB = require("./MongoDB");
@@ -12,3 +14,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/books", booksRouter);
 
 MongoDB.init();
+
+exports.app = functions.https.onRequest(app);
